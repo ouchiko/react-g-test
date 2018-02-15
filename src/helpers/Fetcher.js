@@ -7,7 +7,7 @@ class Fetcher {
             return data;
         })
         .catch(function(error) {
-            return error;
+            throw error;
         });
     }
 }

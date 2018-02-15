@@ -7,7 +7,6 @@ class UICategoryBar extends Component {
 
     constructor(props, context) {
         super(props, context);
-        console.dir(props);
         this.state = {
             categoryItems: null
         };
@@ -17,9 +16,9 @@ class UICategoryBar extends Component {
     componentDidMount() {
         if (this.props.categories.data && this.props.categories.data.length) {
             const items = this.props.categories.data.map((item) => {
-                return <UICategoryItem data={item} key={item.id}/>;
+                //this.props.filterChange(item);
+                return <UICategoryItem item={item} key={item.id} filterChange={this.props.filterChange.bind(this)}/>;
             });
-            console.log(items);
             this.setState({
                 categoryItems: items
             });

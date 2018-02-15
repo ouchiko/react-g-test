@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .define--loading {
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: center;
     font-family: Helvetica;
+    font-size: 30px;
+}
+
+.define--failed {
+    margin-top: 150px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+}
+
+.define--failed > div {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.define--loading > div {
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 
